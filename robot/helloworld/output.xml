@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200307 18:42:51.423" rpa="false">
+<suite id="s1" name="Test" source="c:\qaninja\robot\test.robot">
+<test id="s1-t1" name="Deve retornar mensagem de boas vindas">
+<kw name="Welcome" library="app">
+<arguments>
+<arg>Paulo</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200307 18:42:51.463" level="INFO">${result} = Olá Paulo, bem vindo ao curso báscio de Robot Framework!</msg>
+<status status="PASS" starttime="20200307 18:42:51.463" endtime="20200307 18:42:51.463"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>Olá Paulo, bem vindo ao curso báscio de Robot Framework!</arg>
+</arguments>
+<status status="PASS" starttime="20200307 18:42:51.463" endtime="20200307 18:42:51.463"></status>
+</kw>
+<kw name="Open Browser">
+<msg timestamp="20200307 18:42:51.463" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20200307 18:42:51.463" endtime="20200307 18:42:51.463"></status>
+</kw>
+<status status="FAIL" starttime="20200307 18:42:51.463" endtime="20200307 18:42:51.463" critical="yes">No keyword with name 'Open Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20200307 18:42:51.433" endtime="20200307 18:42:51.463"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
