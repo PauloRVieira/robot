@@ -11,7 +11,7 @@ ${pwsd}         SOFT
 
 *** Keywords ***
 Nova sessão
-    Open Browser                    ${url}              chrome
+    Open Browser                    ${url}              headlesschrome
 
 Encerra sessão
     Capture Page Screenshot
